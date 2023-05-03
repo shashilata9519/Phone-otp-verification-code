@@ -1,0 +1,109 @@
+.Contact{
+    background-color: #f4f5f7;
+    
+        /* background-color: #282c34; */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+        /* color: white; */
+        color: black;
+    
+}
+
+.ContactForm{
+    background-color: #fff;
+    width: 30%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    font-family: Muli,sans-serif;
+}
+
+    input:invalid{
+        border: 2px solid red;
+        animation: shake 0.2s 2;
+    }
+    @keyframes shake {
+        25%{
+            translate: 6px 0;
+        }
+        50%{
+            translate: -6px 0;
+        }
+        75%{
+            translate: 6px 0;
+        }
+        
+    }
+
+.ContactForm .log_wraps label, .customize label{
+
+    font-size: 13px;
+    font-weight:lighter;
+    color: #455892 !important;
+}
+.ContactForm .log_head h4{
+    font-size: 3rem !important;
+    font-weight: 300;
+}
+.ContactForm .log_head span{
+    color: #f8575c;
+}
+
+.ContactForm .log_wraps button,.customize button{
+    background: #f8575c;
+    color: white;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: none;
+   
+}
+
+.ContactForm .log_wraps .form-control ,.customize  .log_wraps .form-control{
+    background: #f4f5f7;
+    border: 1px solid #eaecf1;
+    height: 56px;
+    border-radius: 0;
+    font-size: 15px;
+    box-shadow: none;
+    padding: 0.5rem 0.75rem;
+    color: rgb(24,163,106) !important;
+}
+
+.ContactForm .log_wraps .log_forgot{
+    color: #f8575c
+}
+
+.ContactForm input::placeholder{
+    color: #a8aaac !important;
+  }
+  .ContactForm input:focus {
+    background-color: rgba(150,216,190,0.216) !important;
+    border-bottom: 2px solid rgba(108, 200, 164, 0.3) !important;
+
+  }
+
+  /* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .ContactForm{
+        width: auto;
+    }
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 780px) { 
+    .ContactForm{
+        width: auto;
+    }
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {} */
+
+/* // Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { ... } */
+
+/* // X-Large devices (large desktops, less than 1400px) */
+/* @media (max-width: 1399.98px) { ... } */
